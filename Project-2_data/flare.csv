@@ -1,0 +1,52 @@
+id,value,fill
+flare.analytics.cluster.Alabama,1201,lightblue
+flare.analytics.graph.Alaska,88,lightblue
+flare.animate.Arizona,1277,lightblue
+flare.animate.interpolate.Arkansas,751,lightblue
+flare.data.converters.California,4596,lightblue
+flare.analytics.cluster.Colorado,802,lightblue
+flare.analytics.graph.Connecticut,382,cadetblue
+flare.animate.Delaware,192,cadetblue
+flare.animate.interpolate.District of Columbia,32,cadetblue
+flare.data.converters.Florida,4238,cadetblue
+flare.analytics.cluster.Georgia,2070,cadetblue
+flare.analytics.graph.Hawaii,134,cadetblue
+flare.animate.Idaho,281,cadetblue
+flare.animate.interpolate.Illinois,1413,cadetblue
+flare.data.converters.Indiana,1180,cadetblue
+flare.analytics.cluster.Iowa,433,cadetblue
+flare.analytics.graph.Kansas,474,cadetblue
+flare.animate.Kentucky,1102,cadetblue
+flare.animate.interpolate.Louisiana,1024,mediumblue
+flare.data.converters.Maine,194,mediumblue
+flare.analytics.cluster.Maryland,749,mediumblue
+flare.analytics.graph.Massachusetts,428,mediumblue
+flare.animate.Michigan,1476,mediumblue
+flare.animate.interpolate.Minnesota,597,mediumblue
+flare.data.converters.Mississippi,878,mediumblue
+flare.analytics.cluster.Missouri,1254,mediumblue
+flare.analytics.graph.Montana,271,mediumblue
+flare.animate.Nebraska,338,mediumblue
+flare.animate.interpolate.Nevada,467,mediumblue
+flare.data.converters.New Hampshire,143,mediumblue
+flare.analytics.cluster.New Jersey,795,mediumblue
+flare.analytics.graph.New Mexico,383,mediumblue
+flare.animate.New York,1568,mediumblue
+flare.animate.interpolate.North Carolina,1979,mediumblue
+flare.data.converters.North Dakota,170,mediumblue
+flare.analytics.cluster.Ohio,1691,mediumblue
+flare.analytics.graph.Oklahoma,904,mediumblue
+flare.animate.Oregon,608,mediumblue
+flare.animate.interpolate.Pennsylvania,1736,mediumblue
+flare.data.converters.Rhode Island,58,mediumblue
+flare.analytics.cluster.South Carolina,1427,mediumblue
+flare.analytics.graph.South Dakota,170,green
+flare.animate.Tennessee,1375,red
+flare.animate.interpolate.Texas,4999,blue
+flare.data.converters.Utah,428,green
+flare.analytics.cluster.Vermont,72,red
+flare.analytics.graph.Virginia,1042,blue
+flare.animate.Washington,812,green
+flare.animate.interpolate.West Virginia,364,red
+flare.data.converters.Wisconsin,812,blue
+flare.analytics.cluster.Wyoming,198,green
