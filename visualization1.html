@@ -14,7 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="sequences.css" rel="stylesheet">
 
   </head>
 
@@ -23,14 +23,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Traffic Safety</a>
+          <a class="navbar-brand" href="index_map.html">Traffic Safety</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="index_map.html">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -51,37 +51,46 @@
       <!-- Portfolio Item Heading -->
       <h1 class="my-4">
         <BR>
-          Visualization One
-        <small>Secondary Text</small>
+          Sunburst Visualization
       </h1>
 
       <!-- Portfolio Item Row -->
       <div class="row">
 
         <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
-        </div>
+          <script src="//d3js.org/d3.v3.min.js"></script>
+          <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+          <link rel="stylesheet" type="text/css" href="sequences.css"/>
+        </head>
+        <body>
+          <div id="main">
+            <div id="sequence"></div>
+            <div id="chart">
+              <div id="explanation" style="visibility: hidden;">
+                <span id="percentage"></span><br/>
+                of accidents in this condition
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <input type="checkbox" id="togglelegend"> Legend<br/>
+            <div id="legend" style="visibility: hidden;"></div>
+          </div>
+          <script type="text/javascript" src="sequences.js"></script>
+          <script type="text/javascript">
+            // Hack to make this example display correctly in an iframe on bl.ocks.org
+            d3.select(self.frameElement).style("height", "700px");
+        </script>         </div>
 
         <div class="col-md-4">
           <h3 class="my-3">Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
+          <p>Here is a sunburst chart displaying light and weather conditions by percetnage of fatal accidents that occur in each condition. Light conditions are selected first and are specified by weather factors.</p>
+          <h3 class="my-3">Key Points</h3>
           <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
-          <!--Added Selection Box-->
-          <div class="panel panel-primary">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Selected Sample</h3>
-              </div>
-              <div class="panel-body">
-                  <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                  <ul id="sampleMetadata"></ul>
-              </div>
-          </div>             
+            <li>Most fatal accidents occur in clear conditions.</li>
+            <li>There is approximately an equal division between daylight and nighttime settings.</li>
+          </ul>            
         </div>
 
       </div>
@@ -92,32 +101,32 @@
 
       <div class="row">
 
-          <div class="col-md-3 col-sm-6 mb-4">
-              <a href="index.html">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-              </a>
-              <p>Main Visualization</p>
-            </div>
-
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="visualization1.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          <a href="index_map.html">
+            <img class="img-fluid" src="images/map.PNG" alt="">
           </a>
-          <p><b>Visualization 1</b></p>
+          <p>Main Visualization</p>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="visualization2.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-          <p>Visualization 2</p>
-        </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="visualization1.html">
+        <img class="img-fluid" src="images/sunburst.png" alt="">
+      </a>
+      <p><b>Sunburst</b></p>
+    </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-            <a href="visualization3.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-          <p>Visualization 3</p>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="visualization2.html">
+        <img class="img-fluid" src="images/bubble.png" alt="">
+      </a>
+      <p>Bubble Visualization</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+        <a href="visualization3.html">
+        <img class="img-fluid" src="images/drunkdriver_tooltip.jpg" alt="">
+      </a>
+      <p>Bar Graph Visulation</p>
         </div>
 
       </div>

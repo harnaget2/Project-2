@@ -23,14 +23,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Traffic Safety</a>
+          <a class="navbar-brand" href="index_map.html">Traffic Safety</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="index_map.html">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -51,37 +51,93 @@
       <!-- Portfolio Item Heading -->
       <h1 class="my-4">
         <BR>
-          Visualization Two
-        <small>Secondary Text</small>
+          Bubble Visualization
       </h1>
 
       <!-- Portfolio Item Row -->
       <div class="row">
 
         <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
-        </div>
+          <svg width="700" height="700" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+          <script src="https://d3js.org/d3.v4.min.js"></script>
+          <script>
+          
+          var svg = d3.select("svg"),
+              width = +svg.attr("width"),
+              height = +svg.attr("height");
+          
+          var format = d3.format(",d");
+          
+          var color = d3.scaleOrdinal(d3.schemeCategory20c);
+          
+          var pack = d3.pack()
+              .size([width, height])
+              .padding(1.5);
+          
+          d3.csv("Project-2_data/flare-color.csv", function(d) {
+            d.value = +d.value;
+            if (d.value) return d;
+          }, function(error, classes) {
+            if (error) throw error;
+          
+            var root = d3.hierarchy({children: classes})
+                .sum(function(d) { return d.value; })
+                .each(function(d) {
+                  if (id = d.data.id) {
+                    var id, i = id.lastIndexOf(".");
+                    d.id = id;
+                    d.package = id.slice(0, i);
+                    d.class = id.slice(i + 1);
+                  }
+                });
+          
+            var node = svg.selectAll(".node")
+              .data(pack(root).leaves())
+              .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+          
+            node.append("circle")
+                .attr("id", function(d) { return d.id; })
+                .attr("r", function(d) { return d.r; })
+                .style("fill", function(d) { return d.data.fill; })
+          
+            node.append("clipPath")
+                .attr("id", function(d) { return "clip-" + d.id; })
+              .append("use")
+                .attr("xlink:href", function(d) { return "#" + d.id; });
+          
+            node.append("text")
+                .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
+              .selectAll("tspan")
+              .data(function(d) { return d.class.split(/(?=[A-Z][^A-Z])/g); })
+              .enter().append("tspan")
+                .attr("x", 0)
+                .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
+                .text(function(d) { return d; });
+          
+            node.append("title")
+                .text(function(d) { return d.data.state + "\n" + (d.data.info); });
+          });
+          
+          </script>
+         </div>
 
         <div class="col-md-4">
           <h3 class="my-3">Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
+          <p>
+          Here we have states sized and colored by their safety scores.
+South Carolina and Texas are shown as the 2 most dangerous states to drive while
+Minnesota and Iowa are two of the safest. This data has controlled for licensed drivers
+per capita.  
+          </p>
+          <h3 class="my-3">Key Points</h3>
           <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
+            <li>SC and TX among the Worst</li>
+            <li>IA and MI among the safest</li>
+            <li>Hover over for total fatalities</li>
           </ul>
-          <!--Added Selection Box-->
-          <div class="panel panel-primary">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Selected Sample</h3>
-              </div>
-              <div class="panel-body">
-                  <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                  <ul id="sampleMetadata"></ul>
-              </div>
-          </div>             
+         
         </div>
 
       </div>
@@ -93,31 +149,31 @@
       <div class="row">
 
           <div class="col-md-3 col-sm-6 mb-4">
-              <a href="index.html">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+              <a href="index_map.html">
+                <img class="img-fluid" src="images/map.PNG" alt="">
               </a>
               <p>Main Visualization</p>
             </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="visualization1.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            <img class="img-fluid" src="images/sunburst.png" alt="">
           </a>
-          <p>Visualization 1</p>
+          <p>Sunburst</p>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="visualization2.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            <img class="img-fluid" src="images/bubble.png" alt="">
           </a>
-          <p><b>Visualization 2</b></p>
+          <p><b>Bubble Visualization</b></p>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
             <a href="visualization3.html">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            <img class="img-fluid" src="images/drunkdriver_tooltip.jpg" alt="">
           </a>
-          <p>Visualization 3</p>
+          <p>Bar Graph Visulation</p>
         </div>
 
       </div>

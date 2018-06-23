@@ -1,0 +1,51 @@
+id,state,value,fill,info
+flare.data.converters.South Carolina,South Carolina,130.4,red,Number of Fatalities: 1427
+flare.data.converters.Texas,Texas,127.8,red,Number of Fatalities: 4999
+flare.animate.interpolate.North Dakota,North Dakota,118.2,red,Number of Fatalities: 170
+flare.animate.interpolate.Montana,Montana,113.2,red,Number of Fatalities: 271
+flare.data.converters.Missouri,Missouri,106.6,red,Number of Fatalities: 1254
+flare.data.converters.Pennsylvania,Pennsylvania,104.6,red,Number of Fatalities: 1736
+flare.animate.interpolate.Wyoming,Wyoming,100.6,red,Number of Fatalities: 198
+flare.data.converters.Illinois,Illinois,100.4,red,Number of Fatalities: 1413
+flare.animate.interpolate.New Mexico,New Mexico,99.2,red,Number of Fatalities: 383
+flare.data.converters.North Carolina,North Carolina,98.6,red,Number of Fatalities: 1979
+flare.animate.interpolate.Delaware,Delaware,96,tomato,Number of Fatalities: 192
+flare.analytics.cluster.Louisiana,Louisiana,95.8,tomato,Number of Fatalities: 1024
+flare.animate.interpolate.Hawaii,Hawaii,91.2,tomato,Number of Fatalities: 134
+flare.analytics.cluster.Wisconsin,Wisconsin,89.2,tomato,Number of Fatalities: 812
+flare.analytics.cluster.Alabama,Alabama,88.6,tomato,Number of Fatalities: 1201
+flare.animate.interpolate.West Virginia,West Virginia,86,tomato,Number of Fatalities: 364
+flare.animate.interpolate.Nevada,Nevada,83.4,tomato,Number of Fatalities: 467
+flare.analytics.cluster.Colorado,Colorado,83.2,tomato,Number of Fatalities: 802
+flare.analytics.cluster.Washington,Washington,82.4,tomato,Number of Fatalities: 812
+flare.data.converters.Arizona,Arizona,79.4,orangered,Number of Fatalities: 1277
+flare.analytics.cluster.Mississippi,Mississippi,78,orangered,Number of Fatalities: 878
+flare.animate.interpolate.New Hampshire,New Hampshire,77.8,orangered,Number of Fatalities: 143
+flare.analytics.cluster.Oklahoma,Oklahoma,76.8,orangered,Number of Fatalities: 904
+flare.analytics.cluster.Maryland,Maryland,75.2,orangered,Number of Fatalities: 749
+flare.animate.interpolate.Maine,Maine,74.6,orangered,Number of Fatalities: 194
+flare.animate.interpolate.South Dakota,South Dakota,73.6,orangered,Number of Fatalities: 170
+flare.animate.interpolate.Connecticut,Connecticut,73.4,orangered,Number of Fatalities: 382
+flare.data.converters.Ohio,Ohio,70.6,orangered,Number of Fatalities: 1691
+flare.data.converters.Tennessee,Tennessee,69,orangered,Number of Fatalities: 1375
+flare.data.converters.New York,New York,67.6,coral,Number of Fatalities: 1568
+flare.analytics.cluster.Virginia,Virginia,67.2,coral,Number of Fatalities: 1042
+flare.data.converters.California,California,67,coral,Number of Fatalities: 4596
+flare.animate.interpolate.Rhode Island,Rhode Island,66.8,coral,Number of Fatalities: 58
+flare.analytics.cluster.Oregon,Oregon,64.2,coral,Number of Fatalities: 608
+flare.animate.interpolate.Kansas,Kansas,63.4,coral,Number of Fatalities: 474
+flare.animate.interpolate.Massachusetts,Massachusetts,62.8,coral,Number of Fatalities: 428
+flare.data.converters.Florida,Florida,60,coral,Number of Fatalities: 4238
+flare.animate.interpolate.Alaska,Alaska,58,coral,Number of Fatalities: 88
+flare.analytics.cluster.Indiana,Indiana,57.2,coral,Number of Fatalities: 1180
+flare.analytics.cluster.Kentucky,Kentucky,57.2,lightblue,Number of Fatalities: 1102
+flare.animate.interpolate.Utah,Utah,55.8,lightblue,Number of Fatalities: 428
+flare.animate.interpolate.Idaho,Idaho,54.8,lightblue,Number of Fatalities: 281
+flare.analytics.cluster.Arkansas,Arkansas,54.6,lightblue,Number of Fatalities: 751
+flare.animate.interpolate.Vermont,Vermont,53.6,lightblue,Number of Fatalities: 72
+flare.data.converters.Michigan,Michigan,52,lightblue,Number of Fatalities: 1476
+flare.data.converters.Georgia,Georgia,51.4,lightblue,Number of Fatalities: 2070
+flare.animate.interpolate.Nebraska,Nebraska,44.2,lightblue,Number of Fatalities: 338
+flare.analytics.cluster.Minnesota,Minnesota,42.4,lightblue,Number of Fatalities: 597
+flare.animate.interpolate.Iowa,Iowa,41.2,lightblue,Number of Fatalities: 433
+flare.analytics.cluster.New Jersey,New Jersey,39.8,lightblue,Number of Fatalities: 795

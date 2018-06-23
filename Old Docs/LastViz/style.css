@@ -1,0 +1,29 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.bar {
+    fill: rgb(63, 165, 199)
+}
+
+.bar:hover {
+    fill: rgba(29, 74, 141, 0.815)
+}
+
+.tooltip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}

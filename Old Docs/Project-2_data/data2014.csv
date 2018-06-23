@@ -1,0 +1,51 @@
+objectName,reset,riskCategory1,riskCategory2,ratingCategory,crashes,score
+Alabama,All-Objects,low,low,DANGER,1201,88.6
+Alaska,All-Objects,low,low,Moderate,88,58
+Arizona,All-Objects,low,low,Moderate,1277,79.4
+Arkansas,All-Objects,low,low,Safe,751,54.6
+California,All-Objects,low,low,Moderate,4596,67
+Colorado,All-Objects,low,low,DANGER,802,83.2
+Connecticut,All-Objects,low,low,Moderate,382,73.4
+Delaware,All-Objects,low,low,DANGER,192,96
+District of Columbia,All-Objects,low,low,Moderate,32,60
+Florida,All-Objects,low,low,Safe,4238,51.4
+Georgia,All-Objects,low,low,DANGER,2070,91.2
+Hawaii,All-Objects,low,low,Safe,134,54.8
+Idaho,All-Objects,low,low,DANGER,281,100.4
+Illinois,All-Objects,low,low,Moderate,1413,57.2
+Indiana,All-Objects,low,low,Safe,1180,41.2
+Iowa,All-Objects,low,low,Moderate,433,63.4
+Kansas,All-Objects,low,low,Safe,474,57.2
+Kentucky,All-Objects,low,low,DANGER,1102,95.8
+Louisiana,All-Objects,low,low,Moderate,1024,74.6
+Maine,All-Objects,low,low,Moderate,194,75.2
+Maryland,All-Objects,low,low,Moderate,749,62.8
+Massachusetts,All-Objects,low,low,Safe,428,52
+Michigan,All-Objects,low,low,Safe,1476,42.4
+Minnesota,All-Objects,low,low,Moderate,597,78
+Mississippi,All-Objects,low,low,DANGER,878,106.6
+Missouri,All-Objects,low,low,DANGER,1254,113.2
+Montana,All-Objects,low,low,Safe,271,44.2
+Nebraska,All-Objects,low,low,DANGER,338,83.4
+Nevada,All-Objects,low,low,Moderate,467,77.8
+New Hampshire,All-Objects,low,low,Safe,143,39.8
+New Jersey,All-Objects,low,low,DANGER,795,99.2
+New Mexico,All-Objects,low,low,Moderate,383,67.6
+New York,All-Objects,low,low,DANGER,1568,98.6
+North Carolina,All-Objects,low,low,DANGER,1979,118.2
+North Dakota,All-Objects,low,low,Moderate,170,70.6
+Ohio,All-Objects,low,low,Moderate,1691,76.8
+Oklahoma,All-Objects,low,low,Moderate,904,64.2
+Oregon,All-Objects,low,low,DANGER,608,104.6
+Pennsylvania,All-Objects,low,low,Moderate,1736,66.8
+Rhode Island,All-Objects,low,low,DANGER,58,130.4
+South Carolina,All-Objects,low,low,Moderate,1427,73.6
+South Dakota,All-Objects,low,low,Moderate,170,69
+Tennessee,All-Objects,low,low,DANGER,1375,127.8
+Texas,All-Objects,low,low,Safe,4999,55.8
+Utah,All-Objects,low,low,Safe,428,53.6
+Vermont,All-Objects,low,low,Moderate,72,67.2
+Virginia,All-Objects,low,low,Moderate,1042,82.4
+West Virginia,All-Objects,low,low,DANGER,364,86
+Wisconsin,All-Objects,low,low,DANGER,812,89.2
+Wyoming,All-Objects,low,low,DANGER,198,100.6
